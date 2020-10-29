@@ -466,7 +466,7 @@ dt {
 }
 
 .treeview .hitarea {
-    background: url(../../images/tree/treeview-default.gif) -64px -25px no-repeat;
+    background: url(images/tree/treeview-default.gif) -64px -25px no-repeat;
     height: 16px;
     width: 16px;
     margin-left: -16px;
@@ -492,13 +492,13 @@ dt {
 
 .treeview .hover { color: red; cursor: pointer; }
 
-.treeview li { background: url(../../images/tree/treeview-default-line.gif) 0 0 no-repeat; }
+.treeview li { background: url(images/tree/treeview-default-line.gif) 0 0 no-repeat; }
 .treeview li.collapsable, .treeview li.expandable { background-position: 0 -176px; }
 
 .treeview .expandable-hitarea { background-position: -80px -3px; }
 
 .treeview li.last { background-position: 0 -1766px }
-.treeview li.lastCollapsable, .treeview li.lastExpandable { background-image: url(../../images/tree/treeview-default.gif); }
+.treeview li.lastCollapsable, .treeview li.lastExpandable { background-image: url(images/tree/treeview-default.gif); }
 .treeview li.lastCollapsable { background-position: 0 -111px }
 .treeview li.lastExpandable { background-position: -32px -67px }
 
@@ -593,9 +593,9 @@ dt {
 
 .filetree li { padding: 3px 0 2px 16px; }
 .filetree span.folder, .filetree span.file { padding: 1px 0 1px 16px; display: block; }
-.filetree span.folder { background: url(../../images/tree/folder.gif) 0 0 no-repeat; }
-.filetree li.expandable span.folder { background: url(../../images/tree/folder-closed.gif) 0 0 no-repeat; }
-.filetree span.file { background: url(../../images/tree/file.gif) 0 0 no-repeat; }
+.filetree span.folder { background: url(images/tree/folder.gif) 0 0 no-repeat; }
+.filetree li.expandable span.folder { background: url(images/tree/folder-closed.gif) 0 0 no-repeat; }
+.filetree span.file { background: url(images/tree/file.gif) 0 0 no-repeat; }
 
 .cpg_message_info, .cpg_message_success, .cpg_message_warning, .cpg_message_error, .cpg_message_validation, .cpg_example, .cpg_code {
     border: 1px solid;
@@ -696,11 +696,11 @@ textarea.samplecode {
 }
 
 .detail_head_collapsed {
-	background-image:url('../../images/tree/plus.gif');
+	background-image:url('images/tree/plus.gif');
 }
 
 .detail_head_expanded {
-	background-image:url('../../images/tree/minus.gif');
+	background-image:url('images/tree/minus.gif');
 }
 
 .detail_body {

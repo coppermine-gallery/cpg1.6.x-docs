@@ -40,7 +40,17 @@
 <p>A Coppermine theme <em>can</em> come with an iconset of it's own. If it doesn't come with an icon set of it's own, the default icon set is being used that resides in the folder <span class="code">./your_coppermine_folder/images/icons/</span>. If a theme comes with an iconset of it's own, the icons will reside in the folder <span class="code">./your_coppermine_folder/themes/your_custom_theme/images/icons/</span>. You have to explicitly specify that a custom theme has got a per-theme icon set of it's own. To accomplish this, you need to edit <span class="code">./your_coppermine_folder/themes/your_custom_theme/theme.php</span> with a <a href="dev_tools.htm#dev_tools_editor">plain-text editor</a> and add/uncomment a line like this:</p>
 <pre class="code">define('THEME_HAS_MENU_ICONS',16);</pre>
 <p>If such a line is present, coppermine will look for menu icons within <span class="code">./your_coppermine_folder/themes/your_custom_theme/images/icons/</span>. If such a line is not present, the default icon set that comes with coppermine will be used. The code you need to add must be in a line of it's own. It defines a constant and fills that constant with the value "16", where that value stands for the size (in pixels) of the square menu icons.</p>
-<p>The menu icon feature is comparatively new, so with the initial release of cpg1.5.x, there probably won't be many different menu icons to choose from. However, this may differ, as the number of available menu icon sets may increase. It's recommended to check the official website from time to time for new icon sets.</p>
+<p>You may also substitute the small icon images with other HTML such as that used with CSS font icons. Two things are needed for that to happen. Like the define above, you need to add a <em>define</em> in your <em>theme.php</em> file.</p>
+<pre class="code">define('THEME_USES_ICON_FONT',1);</pre>
+<xmp class="code" style="font-size:larger"><?php
+$fonticons = array(
+    '_beg'        => '<i class="fa fa-',
+    '_end'        => '" aria-hidden="true"></i>',
+    'delete'      => 'trash',
+    'edit'        => 'edit',
+    'config'      => 'cog',
+    'groups_mgr'  => 'users'
+    );</xmp>
 <a id="theme_graphics_menu_icons_end"></a>
 
 <a id="theme_graphics_nav_bar"></a><h2>Image Navigation bar<a href="#theme_graphics_nav_bar" title="Link to this section"><img src="images/anchor.gif" width="15" height="9" alt="" /></a></h2>

@@ -129,8 +129,17 @@ and ends with
   <tr>
     <td><a id="theme_create_theme_menu_icon"></a>define('<strong>THEME_HAS_MENU_ICONS</strong>',16);<a href="#theme_create_theme_menu_icon" title="Link to this section"><img src="images/anchor.gif" width="15" height="9" alt="" /></a></td>
     <td>constant</td>
-    <td>The location for the menu icon graphics that are being displayed if the config option "<a href="configuration.htm#admin_enable_menu_icons">Enable menu icons</a>" has been turned on. When the constant is set, the script will be directed to the theme's images folder, subfolder 'icons', i.e. <span class="code">themes/yourtheme/images/icons/</span> and look for the menu icon images there. If not defined (default), the menu icon images will be taken from <span class="code">images/icons/</span>. Unlike most other custom theme constants, the value you assign to the constant <em>does</em> matter in this case: set it to the size (in pixels) that your custom icons have. The custom icons (as well as the default icons) need to be square in shape.<br />If you decide to use your own set of menu icons for your custom theme, it's advisable to copy the folder <span class="code">images/icons/</span> into <span class="code">themes/yourtheme/images/</span> to have a set of defaults and then start modifying your custom menu items one by one.</td>
+    <td>The location for the menu icon graphics that are being displayed if the config option "<a href="configuration.htm#admin_enable_menu_icons">Enable menu icons</a>" has been turned on. When the constant is set, the script will be directed to the theme's images folder, subfolder 'icons', i.e. <span class="code">themes/yourtheme/images/icons/</span> and look for the menu icon images there. If not defined (default), the menu icon images will be taken from <span class="code">images/icons/</span>. Unlike most other custom theme constants, the value you assign to the constant <em>does</em> matter in this case: set it to the size (in pixels) that your custom icons have. The custom icons (as well as the default icons) need to be square in shape.<br />If you decide to use your own set of menu icons for your custom theme, it's advisable to copy the folder <span class="code">images/icons/</span> into <span class="code">themes/yourtheme/images/</span> to have a set of defaults and then start modifying your custom menu items one by one.<br />(v1.6.08+)You can choose to substitue only some icons. Any icons not in your theme's icons folder will be taken from the core set of icons.</td>
     <td></td>
+  </tr>
+  <tr>
+    <td><a id="theme_create_theme_icon_font"></a>define('<strong>THEME_USES_ICON_FONT</strong>',1);<a href="#theme_create_theme_icon_font" title="Link to this section"><img src="images/anchor.gif" width="15" height="9" alt="" /></a></td>
+    <td>constant</td>
+    <td>This feature will allow a theme to substitute other html code for icons rather than an <span class="code">&lt;img&gt;</span> icon. Meant for icon font usage, such as <span class="code">&lt;i class="fa fa-trash"&gt;&lt;/i&gt;</span>, it can also be used for other valid html such as a simple <span class="code">&lt;span&gt;Edit Image&lt;/span&gt;</span> for text replacement of a stand-alone icon.
+    </td>
+    <td>
+      Available in CPG version 1.6.08 and later. If defined, a file named <span class="code">icons.php</span> needs to reside in the theme's <em>images/icons</em> folder. [<a href="theme_graphics.htm#theme_graphics_menu_icons">Details</a>]
+    </td>
   </tr>
   <tr>
     <td><a id="theme_create_theme_navbar_graphic"></a>define('<strong>THEME_HAS_NAVBAR_GRAPHICS</strong>',1);<a href="#theme_create_theme_navbar_graphic" title="Link to this section"><img src="images/anchor.gif" width="15" height="9" alt="" /></a></td>
