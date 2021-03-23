@@ -382,6 +382,13 @@
     <td><textarea class="samplecode" style="width:100%">echo CPGPluginAPI::filter('usermgr_footer','');</textarea></td>
   </tr>
   <tr>
+    <td>bridge/coppermine.inc.php</td>
+    <td><a id="plugin_hooks_bridge_authorize_user"></a><strong>authorize_user</strong><a href="#plugin_hooks_bridge_authorize_user" title="Link to this section"><img src="images/anchor.gif" width="15" height="9" alt="" /></a></td>
+    <td>Action</td>
+    <td>If $USERDATA === false, return false. If user is authorized, return $USERDATA ... otherwise, return false.</td>
+    <td><textarea class="samplecode" style="width:100%">$USERDATA = CPGPluginAPI::action('authorize_user', $USERDATA);</textarea></td>
+  </tr>
+  <tr>
     <td>include/functions.inc.php</td>
     <td><a id="plugin_hooks_filename_gallery_header"></a><strong>gallery_header</strong><a href="#plugin_hooks_filename_gallery_header" title="Link to this section"><img src="images/anchor.gif" width="15" height="9" alt="" /></a></td>
     <td>Filter</td>

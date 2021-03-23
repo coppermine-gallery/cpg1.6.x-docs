@@ -1508,12 +1508,12 @@ function cpgDocSearch() {
 	}
 	var doc_search = '';
 	doc_search += '  <div id="doc_search" style="display:none;">\n';
-	doc_search += '    <form action="http://www.google.com/cse" id="cse-search-box">\n';
+	doc_search += '    <form action="//www.google.com/cse" id="cse-search-box">\n';
 	doc_search += '      <input type="hidden" name="cx" value="009353514429642786404:keefjtiy3lo" />\n';
 	doc_search += '      <input type="text" name="q" size="25" />\n';
 	doc_search += '      <input type="submit" name="sa" value="search docs" style="font-size:9px;" />\n';
 	doc_search += '    </form>\n';
-	doc_search += '    <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&lang=en"></script>\n';
+	doc_search += '    <script type="text/javascript" src="//www.google.com/coop/cse/brand?form=cse-search-box&lang=en"></script>\n';
 	doc_search += '  </div>\n';
 	$('#toc').append(doc_search);
 }
